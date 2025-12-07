@@ -1,51 +1,74 @@
-/* --- Moonlight Silver Minimalist Aesthetic --- */
+/* --- Navigation menu (top bar) --- */
 
-/* Page layout */
-body {
-  font-family: "Inter", "Helvetica Neue", "Noto Sans JP", sans-serif;
-  background: #ffffff;
-  color: #1a1a1a;
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 2.5rem 1.2rem;
-  line-height: 1.65;
-  letter-spacing: 0.25px;
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
 }
 
-/* Titles (elegant serif) */
-h1, h2, h3 {
-  font-family: "Georgia", "Times New Roman", serif;
-  color: #2f2f2f;
-  font-weight: 500;
-  margin-top: 2.4rem;
-  margin-bottom: 1rem;
-}
-
-/* Subtle moon-silver separator */
-hr {
-  border: none;
-  border-top: 1px solid #dfe3ea;
-  margin: 2.4rem 0;
-}
-
-/* Links in soft moonlight blue */
-a {
-  color: #6a7ba8;
+.nav-menu > a {
+  font-family: "Inter", "Helvetica Neue", sans-serif;
+  font-size: 0.92rem;
+  color: #1f3a60; /* midnight blue */
   text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.3px;
 }
 
-a:hover {
+.nav-menu > a:hover {
   text-decoration: underline;
 }
 
-/* Paragraph spacing */
-p {
-  margin: 1.2rem 0;
+/* --- Dropdown "Notebook" --- */
+
+.nav-dropdown {
+  position: relative;
+  font-family: "Inter", "Helvetica Neue", sans-serif;
+  font-size: 0.92rem;
+  cursor: pointer;
 }
 
-/* Optional navigation (future) */
-nav {
-  border-bottom: 1px solid #e6e6e6;
-  padding-bottom: 0.7rem;
-  margin-bottom: 2.2rem;
+.nav-dropdown-label {
+  color: #1f3a60;  /* midnight blue */
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.nav-dropdown-label:hover {
+  text-decoration: underline;
+}
+
+/* Box menu yang muncul saat hover */
+.nav-dropdown-menu {
+  position: absolute;
+  top: 1.6rem;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+  padding: 0.6rem 0.9rem;
+  min-width: 170px;
+  z-index: 10;
+}
+
+.nav-dropdown-menu a {
+  font-size: 0.9rem;
+  color: #1f3a60;
+  text-decoration: none;
+  margin: 0.15rem 0;
+}
+
+.nav-dropdown-menu a:hover {
+  text-decoration: underline;
+}
+
+/* Tampilkan dropdown saat mouse di atas label atau box */
+.nav-dropdown:hover .nav-dropdown-menu {
+  display: flex;
 }
