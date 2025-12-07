@@ -1,0 +1,18 @@
+title: Silver Adventure
+description: A journey through light, reflection, stories, and discovery.
+
+theme: jekyll-theme-minimal
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Custom CSS
+sass:
+  style: compressed
+
+# Tell GitHub Pages to include our custom CSS
+include:
+  - assets
+  - assets/css
