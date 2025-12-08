@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Silver Adventure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* ----------------------------
+       Global layout
+    -----------------------------*/
+    body {
+      font-family: "Georgia", "Times New Roman", serif;
+      background: #ffffff;
+      color: #111827;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #1f3a60; /* midnight blue */
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .site-title {
+      font-size: 2.6rem;
+      font-weight: 600;
+      color: #1f2933;
+      margin: 0;
+    }
+
+    .site-tagline {
+      margin-top: 0.4rem;
+      color: #4b5563;
+      font-size: 1.02rem;
+    }
+
+    /* ----------------------------
+       Navigation (right aligned)
+    -----------------------------*/
+    .nav-menu {
+      display: flex;
+      gap: 1.6rem;
+      align-items: center;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: #1f3a60;
+      margin-top: 0.4rem;
+    }
+
+    .nav-menu > a {
+      white-space: nowrap;
+    }
+
+    /* Dropdown "Notebook" */
+    .nav-dropdown {
+      position: relative;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .nav-dropdown-label {
+      color: #1f3a60;
+    }
+
+    .nav-dropdown-menu {
+      position: absolute;
+      top: 1.6rem;
+      right: 0;
+      display: none;
+      flex-direction: column;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+      padding: 0.6rem 0.9rem;
+      min-width: 170px;
+      z-index: 10;
+    }
+
+    .nav-dropdown-menu a {
+      font-size: 0.88rem;
+      margin: 0.22rem 0;
+    }
+
+    .nav-dropdown:hover .nav-dropdown-menu {
+      display: flex;
+    }
+
+    /* Content */
+    main {
+      margin-top: 1.8rem;
+      border-top: 1px solid #e5e7eb;
+      padding-top: 1.6rem;
+      font-size: 1.02rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="page-header">
+    <div>
+      <h1 class="site-title">Silver Adventure</h1>
+      <p class="site-tagline">
+        A journey through light, reflection, stories, and discovery.
+      </p>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="./">Home</a>
+      <a href="./about/">About Me</a>
+      <a href="./reach/">Reach Me</a>
+
+      <div class="nav-dropdown">
+        <span class="nav-dropdown-label">Notebook ▾</span>
+        <div class="nav-dropdown-menu">
+          <a href="./writings/">Writings</a>
+          <a href="./reflections/">Reflections</a>
+          <a href="./stories/">Stories</a>
+          <a href="./language/">Language Notes</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <p>
+      Welcome to this small, calm corner of this digital universe —
+      where I write, reflect, and sometimes tell a story. 🌙
+    </p>
+  </main>
+
+</body>
+</html>
