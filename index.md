@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <style>
 /* ------------------------------------------------------
    Silver Adventure — Clean White x Midnight Blue Theme
@@ -85,4 +89,41 @@ a:hover {
   z-index: 10;
 }
 
-.nav-dropdown-m
+.nav-dropdown-menu a {
+  font-size: 0.88rem;
+  margin: 0.22rem 0;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu {
+  display: flex;
+}
+
+/* Hide GitHub footer & project link */
+footer,
+p > a[href*="moonlitwater/silver-adventure"] {
+  display: none !important;
+}
+</style>
+
+<div class="nav-wrapper">
+  <nav class="nav-menu">
+    <a href="/silver-adventure/">Home</a>
+    <a href="/silver-adventure/about/">About Me</a>
+    <a href="/silver-adventure/reach/">Reach Me</a>
+
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-label">Notebook ▾</span>
+      <div class="nav-dropdown-menu">
+        <a href="/silver-adventure/writings/">Writings</a>
+        <a href="/silver-adventure/reflections/">Reflections</a>
+        <a href="/silver-adventure/stories/">Stories</a>
+        <a href="/silver-adventure/language/">Language Notes</a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+---
+
+Welcome to this small, calm corner of this digital universe —  
+where I write, reflect, and sometimes tell a story. 🌙
